@@ -1,0 +1,25 @@
+buildscript {
+  repositories {
+    mavenLocal()
+    jcenter()
+  }
+  dependencies {
+    classpath "io.gatling.frontline:frontline-gradle-plugin:1.0.0"
+  }
+}
+
+repositories {
+  mavenLocal()
+  jcenter()
+}
+
+apply plugin: "java"
+apply plugin: "scala"
+apply plugin: "io.gatling.frontline.gradle"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+  testCompile "io.gatling.highcharts:gatling-charts-highcharts:3.1.3"
+}
