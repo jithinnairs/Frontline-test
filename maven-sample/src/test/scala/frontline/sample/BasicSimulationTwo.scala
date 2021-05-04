@@ -21,7 +21,7 @@ import scala.concurrent.duration._
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
-class BasicSimulation extends Simulation {
+class BasicSimulationTwo extends Simulation {
 
   val httpProtocol = http
     // Here is the root for all relative URLs
