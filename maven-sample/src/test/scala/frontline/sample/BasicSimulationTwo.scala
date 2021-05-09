@@ -94,5 +94,5 @@ class BasicSimulationTwo extends Simulation {
 
  // setUp(scn.inject(atOnceUsers(1)).protocols(httpProtocol))
 setUp(
-    scn.inject(rampUsers(1) during (1 seconds))
+    scn.inject(rampUsers(2) during (2 seconds))
   ).protocols(httpProtocol)}
