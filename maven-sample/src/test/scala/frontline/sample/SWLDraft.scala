@@ -1164,6 +1164,6 @@ object Chain_0 {
 
 	//setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
 
-	 setUp(scn.inject(rampUsers(1000) during(200.seconds)).protocols(httpProtocol))
+	 setUp(scn.inject(rampUsers(1000) during(10.minutes)).protocols(httpProtocol))
 
 }
