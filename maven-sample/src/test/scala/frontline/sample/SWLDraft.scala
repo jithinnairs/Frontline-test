@@ -1161,8 +1161,8 @@ object Chain_0 {
 	val scn = scenario("SWLDraft").exec(Chain_0.chain_0, Chain_1.chain_1)
 
 
-	//setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
+	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
 
-	  setUp(scn.inject(rampUsers(500) during(100.seconds)).protocols(httpProtocol))
+	//  setUp(scn.inject(rampUsers(500) during(100.seconds)).protocols(httpProtocol))
 
 }
